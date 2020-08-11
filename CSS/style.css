@@ -24,26 +24,30 @@
     font-size: 60px;
     color: #E85A2A;
     text-align: center;
-    animation: Tangled 8s infinite alternate linear;    
+    animation: Tangled 15s infinite alternate linear;    
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.7);
+    z-index: 1;
 }
 @keyframes Tangled{
     0% { 
         position: absolute;
         top:44%;
         left: 50%;
-        transform: translate(-50%,-44%) rotateZ(0deg) scale(1);
+        transform: translate(-50%,-44%) rotateZ(0deg);
     }
     50% { 
         position: absolute;
         top:44%;
         left: 50%;
-        transform: translate(-50%,-44%) rotateZ(35deg) scale(1);
+        transform: translate(-50%,-44%) rotateZ(20deg);
     }
     100% { 
         position: absolute;
         top:44%;
         left: 50%;
-        transform: translate(-50%,-44%) rotateZ(-35deg) scale(1);
+        transform: translate(-50%,-44%) rotateZ(-20deg);
     }  
 }
-
+canvas{
+    z-index: 2;
+}
