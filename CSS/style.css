@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainNox_1{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../Images/mainBG.jpg);
+    background-size: cover;
+    background-position: center;    
+    position: relative;
+   
+}
+.mainNox_1 .mainTitle{
+    position: absolute;
+    top:44%;
+    left: 50%;
+    transform: translate(-50%,-44%);
+    font-family: 'Julee', cursive;
+    font-size: 60px;
+    color: #E85A2A;
+    text-align: center;
+    animation: Tangled 8s infinite alternate linear;    
+}
+@keyframes Tangled{
+    0% { 
+        position: absolute;
+        top:44%;
+        left: 50%;
+        transform: translate(-50%,-44%) rotateZ(0deg) scale(1);
+    }
+    50% { 
+        position: absolute;
+        top:44%;
+        left: 50%;
+        transform: translate(-50%,-44%) rotateZ(35deg) scale(1);
+    }
+    100% { 
+        position: absolute;
+        top:44%;
+        left: 50%;
+        transform: translate(-50%,-44%) rotateZ(-35deg) scale(1);
+    }  
+}
+
